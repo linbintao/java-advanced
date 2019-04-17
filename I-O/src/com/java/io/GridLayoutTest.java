@@ -35,7 +35,7 @@ public class GridLayoutTest extends JFrame {
 
     public void init(){
         //设置整个容器背景
-        getContentPane().setBackground(new Color(53, 219, 40));
+        getContentPane().setBackground(new Color(48, 28, 219));
         //设置3行3列的网格,组件间水平间距50像素，垂直间距30像素
         GridLayout gridLayout = new GridLayout(3,3,50,30);
         setLayout(gridLayout);
@@ -52,10 +52,10 @@ public class GridLayoutTest extends JFrame {
         }
 
         //设置第一个面板的背景颜色，其布局方式默认为FlowLayout居中对齐
-        panels[0].setBackground(new Color(48, 28, 219));
+        panels[0].setBackground(new Color(40, 70, 35));
         //在第一个面板内加入5个按钮
         for (int i =0;i<5;i++){
-            panels[0].add(new JButton("湖人牛逼"));
+            panels[0].add(new JButton("我爱java"));
         }
 
         //设置第二个面板为BorderLayout边界布局，设置背景颜色
@@ -96,7 +96,7 @@ public class GridLayoutTest extends JFrame {
         //在中部放图片
         //读入本地图片到到内存的字节数组
         imgLabel = new JLabel();
-        File srcFile = new File("D:/1111.png");
+        File srcFile = new File("D:/1.jpg");
         InputStream inputStream;
         byte[] bytes = null;
         try {
@@ -115,7 +115,7 @@ public class GridLayoutTest extends JFrame {
         panels[5].add(nameLabel,BorderLayout.SOUTH);
 
         //设置第七面板为流式布局，加入密码框组件
-        panels[6].setBackground(new Color(100, 219, 72));
+        panels[6].setBackground(new Color(30, 150, 164));
         String password = "123456";
         jp = new JPasswordField(password,30);
         //设置回显字符
@@ -132,7 +132,7 @@ public class GridLayoutTest extends JFrame {
         //设置第八面板为流式布局，加入文本域组件
         panels[7].setBackground(new Color(90, 221, 217));
 
-        jt = new JTextArea("南工院",50,50);
+        jt = new JTextArea("计算机",50,50);
         //可自行换行
         jt.setLineWrap(true);
         panels[7].add(jt);
