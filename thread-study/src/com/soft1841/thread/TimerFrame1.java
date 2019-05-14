@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class TimerFrame extends JFrame {
+public class TimerFrame1 extends JFrame {
     private JPanel typePanel;
     private JTextArea textArea;
     private TimerTask drawTask, typeTask, clockTask;
@@ -18,7 +18,7 @@ public class TimerFrame extends JFrame {
     int width = 50;
     int height = 50;
 
-    public TimerFrame() {
+    public TimerFrame1() {
         try {
             init();
         } catch (IOException e) {
@@ -103,6 +103,6 @@ public class TimerFrame extends JFrame {
     }
 
     public static void main(String[] args) {
-        new TimerFrame();
+        new TimerFrame1();
     }
 }
